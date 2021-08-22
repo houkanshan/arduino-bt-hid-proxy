@@ -9,7 +9,7 @@ Works like a Logitech Unifying Receiver but for bluetooth devices.
 <sup>(Image idea from pihidproxy)</sup>
 </p>
 
-> If you are looking for turning a wired keyboard into a wireless keyboard. 
+> NOTE: If you are looking for a project that turns a wired keyboard into a wireless keyboard. 
 This is not the right project. This project does the reverse.
 
 It can be useful in two scenarios:
@@ -17,7 +17,7 @@ It can be useful in two scenarios:
 1. You have a bluetooth keyboard, but it doesn't work in BIOS, Bootloader or TV.
 2. You have a bluetooth keyboard and you want turn it into a programmable keyboard (with [TMK USB to USB Converter](https://geekhack.org/index.php?topic=69169.0))
 
-Previously, I use MikerR's [pihidproxy](https://github.com/mikerr/pihidproxy) but it's not transparency enough and I don't like the start-up time of RPi.
+Previously, I used MikerR's [pihidproxy](https://github.com/mikerr/pihidproxy) but it's not transparency enough and I don't like the start-up time of RPi.
 So I made this one with Arduino.
 
 # Guide
@@ -48,8 +48,8 @@ Follow [this guide](https://geekhack.org/index.php?topic=80421.0) to connect Mic
 3. Let's test if USB Host shield is working: `File -> Examples -> USB Host Shield Library 2.0 -> board_qc`
     1. Upload
     2. `Tools -> Serial Monitor`
-    3. There'll be a GPIO error, ignore it and send any key in serial monitor.
-    4. Wait until `All tests passsed.`
+    3. There'll be a GPIO error, ignore it and send any key in the serial monitor.
+    4. Wait until `All tests passed.`
     5. [This article](https://joshcaplin.wordpress.com/tag/board_qc/) could be helpful if you meet any issue.
 4. `git clone https://github.com/houkanshan/arduino-bt-hid-proxy.git`
 5. In `KeyboardParser.h`, comment `#define APPLE_MAGIC_KBD` if you're not using Apple Magic Keyboard.
@@ -64,7 +64,7 @@ Follow [this guide](https://geekhack.org/index.php?topic=80421.0) to connect Mic
 
 ## Uploading for paired
 
-The current code will try to re-pair everytime after power on. Let's stop it.
+The current code will try to re-pair every time after power on. Let's stop it.
 
 1. In `BTHID.ino`, comment `BTHID bthid(&Btd, PAIR, "0000");` and uncomment `BTHID bthid(&Btd);`
 2. Upload
