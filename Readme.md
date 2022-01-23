@@ -1,6 +1,6 @@
 # Arduino Bluetooth HID Proxy
 
-Bridge Bluetooth keyboard and mouse to wired USB. (i.e. Bluetooth HID Proxy Mode).
+Bridge Bluetooth keyboard to wired USB. (i.e. Bluetooth HID Proxy Mode).
 Works like a Logitech Unifying Receiver but for bluetooth devices.
 
 <p>
