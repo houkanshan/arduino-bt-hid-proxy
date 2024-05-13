@@ -43,6 +43,9 @@ Follow [this guide](https://geekhack.org/index.php?topic=80421.0) to connect Mic
 
 ## Programming
 
+> [!NOTE]
+> if you are NOT using an Apple Magic Keyboard, make sure to finish step 5
+
 1. Open in Arduino IDE
 2. In `Tools -> Manage Libraries`, search and install `USB Host Shield Library 2.0`, `HID-Project`
 3. Let's test if USB Host shield is working: `File -> Examples -> USB Host Shield Library 2.0 -> board_qc`
@@ -52,7 +55,7 @@ Follow [this guide](https://geekhack.org/index.php?topic=80421.0) to connect Mic
     4. Wait until `All tests passed.`
     5. [This article](https://joshcaplin.wordpress.com/tag/board_qc/) could be helpful if you meet any issue.
 4. `git clone https://github.com/houkanshan/arduino-bt-hid-proxy.git`
-5. In `KeyboardParser.h`, comment `#define APPLE_MAGIC_KBD` if you're not using Apple Magic Keyboard.
+5. In `KeyboardParser.h`, comment `#define APPLE_MAGIC_KBD` if you're not using an Apple Magic Keyboard.
 
 ## Uploading for the first pairing
 
