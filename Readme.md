@@ -9,7 +9,8 @@ Works like a Logitech Unifying Receiver but for bluetooth devices.
 <sup>(Image idea from pihidproxy)</sup>
 </p>
 
-> NOTE: If you are looking for a project that turns a wired keyboard into a wireless keyboard. 
+> [!NOTE]
+> If you are looking for a project that turns a wired keyboard into a wireless keyboard. 
 This is not the right project. This project does the reverse.
 
 It can be useful in two scenarios:
@@ -55,7 +56,7 @@ Follow [this guide](https://geekhack.org/index.php?topic=80421.0) to connect Mic
     4. Wait until `All tests passed.`
     5. [This article](https://joshcaplin.wordpress.com/tag/board_qc/) could be helpful if you meet any issue.
 4. `git clone https://github.com/houkanshan/arduino-bt-hid-proxy.git`
-5. In `KeyboardParser.h`, comment `#define APPLE_MAGIC_KBD` if you're not using an Apple Magic Keyboard.
+5. In `KeyboardParser.h`, comment `#define APPLE_MAGIC_KBD` (adding `//` to the beginning) if you're not using an Apple Magic Keyboard.
 
 ## Uploading for the first pairing
 
